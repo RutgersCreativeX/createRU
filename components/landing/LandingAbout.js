@@ -4,7 +4,7 @@ const LandingAbout = () => {
   return (
     <div className={styles.landingAbout}>
       <div className={styles.aboutContainer}>
-        <p style={{ fontSize: "28px" }}>Register ASAP to get your spot!</p>
+        <div style={{ fontSize: "28px" }}>Register ASAP to get your spot!</div>
         <div className={styles.aboutHeading}>WHEN</div>
         <span className={styles.aboutDescription}>Apr 10 - Apr 11</span>
         <div className={styles.aboutHeading}>PRIORITY REGISTRATION</div>

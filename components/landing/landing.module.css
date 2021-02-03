@@ -1,22 +1,17 @@
 .landingPresents {
   max-width: 650px;
-
   background-color: #0056a5;
   box-shadow: 20px 20px 0px 0px #3a9def;
   box-shadow: 0px 4px 40px 0px #000000 8%;
   border-radius: 15px;
-}
-
-.noto {
   font-family: "Noto Sans", sans-serif;
 }
-
 .presentsContainer {
   padding: 30px 100px 30px 50px;
 }
 
 .aboutContainer {
-  padding: 30px 50px 70px 50px;
+  padding: 50px 50px 70px 50px;
   text-align: center;
 }
 
@@ -24,7 +19,6 @@
   background-color: #0056a5;
   border-radius: 15px;
   max-width: 550px;
-  height: 600px;
 }
 
 .aboutHeading {
@@ -57,4 +51,71 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.presentsHeader {
+  font-size: 20px;
+  letter-spacing: 0.15em;
+}
+
+.presentsCreateRU {
+  font-size: 96px;
+  font-family: "Secular One", sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.presentsDescription {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 5px 0px;
+  line-height: 40px;
+}
+
+@media (max-width: 1366px) {
+  .landingPresents {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landingPresents {
+    margin-bottom: 40px;
+  }
+  .presentsContainer {
+    padding: 20px;
+  }
+
+  .presentsHeader {
+    font-size: 16px;
+    letter-spacing: 0.15em;
+  }
+
+  .presentsCreateRU {
+    font-size: 48px;
+    letter-spacing: 0.08em;
+    margin: 0px;
+  }
+
+  .presentsDescription {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .aboutHeading {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .aboutDescription {
+    font-size: 18px;
+  }
+
+  .aboutContainer {
+    padding: 20px 30px 20px 30px;
+  }
+
+  .landingAbout {
+    max-width: 310px;
+  }
 }

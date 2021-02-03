@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>createRU</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -18,13 +18,21 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div style={{ height: "650px" }}>
+        <div>
           <LandingPresents />
-          <div className={styles.notice}>Sign up for priority registration</div>
-          <LandingRegister />
+          <div className={styles.hideMobile}>
+            <div className={styles.notice}>
+              Sign up for priority registration
+            </div>
+            <LandingRegister />
+          </div>
         </div>
-
-        <LandingAbout />
+        <div>
+          <LandingAbout />
+          <div className={styles.showMobile}>
+            <LandingRegister />
+          </div>
+        </div>
       </main>
     </div>
   );

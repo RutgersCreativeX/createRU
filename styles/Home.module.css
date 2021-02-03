@@ -7,7 +7,6 @@
 
 .main {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -19,10 +18,22 @@
   font-size: 24px;
 }
 
-/* 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+.showMobile {
+  display: none;
+}
+
+@media (max-width: 1366px) {
+  .hideMobile {
+    display: none;
+  }
+
+  .showMobile {
+    display: block;
+    margin: 50px 0px;
+  }
+
+  .main {
+    margin-top: 10%;
     flex-direction: column;
   }
-} */
+}
