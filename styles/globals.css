@@ -2,8 +2,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Secular One", sans-serif;
+  color: #ffffff;
+  background-image: url("/images/background.jpg");
+  min-width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 15%;
 }
 
 a {
