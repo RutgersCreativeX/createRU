@@ -1,0 +1,9 @@
+.background {
+  height: 100vh;
+  background: #eceff5;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}

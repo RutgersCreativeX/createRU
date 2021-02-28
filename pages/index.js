@@ -1,6 +1,8 @@
+import React, { useContext } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { Hero,Nav } from "../components";
+import { Hero, Nav, About } from "../components";
+import { SmoothScrollProvider } from "../SmoothScroll.context";
 
 export default function Home() {
   return (
@@ -14,11 +16,15 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-
-      <main className={styles.container}>
-        <Nav/>
-        <Hero />
-      </main>
+      <SmoothScrollProvider options={{ smooth: true }}>
+        <main className={styles.container}>
+          <div data-scroll-section>
+            <Nav />
+            <Hero />
+            <About />
+          </div>
+        </main>
+      </SmoothScrollProvider>
     </>
   );
 }
