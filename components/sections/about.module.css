@@ -1,9 +1,43 @@
 .background {
-  height: 100vh;
-  background: #eceff5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
+  max-width: 2000px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  margin: 120px 104px;
+}
+
+.column {
+  flex: 50%;
+}
+
+.title {
+  color: var(--dark-blue);
+  font-size: 56px;
+  line-height: 56px;
+  margin-bottom: 24px;
+}
+
+.description {
+  color: #101217;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1%;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightCol {
+  margin-left: 64px;
 }

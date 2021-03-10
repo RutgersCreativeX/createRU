@@ -2,7 +2,7 @@
   background: url("/images/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 40%;
+  background-position-y: 50%;
 }
 
 .layer {
@@ -21,21 +21,29 @@
 .header {
   font-size: 64px;
   line-height: 95%;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.subheading {
+  color: #e36c52;
+  font-size: 24px;
+  line-height: 120%;
 }
 
 .description {
   font-family: var(--font-noto);
   font-size: 24px;
   line-height: 33px;
-  margin-bottom: 16px;
-  width: 540px;
+  margin: 16px 0;
+  width: 640px;
 }
 
 .button {
   font-size: 24px;
-
+  color: black;
   letter-spacing: 0.01em;
   display: flex;
+  border: 2px solid var(--blue);
   justify-content: center;
+  background-color: white;
 }

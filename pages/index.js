@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { Hero, Nav, About } from "../components";
+import { Hero, Nav, About, Sponsors } from "../components";
 import { SmoothScrollProvider } from "../SmoothScroll.context";
 
 export default function Home() {
@@ -21,6 +21,7 @@ export default function Home() {
           <div data-scroll-section>
             <Nav />
             <Hero />
+            <Sponsors />
             <About />
           </div>
         </main>
