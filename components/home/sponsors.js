@@ -2,7 +2,7 @@ import styles from "./sponsors.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-const About = () => {
+const Sponsors = () => {
   const sponsors = ["link1", "link2", "link3", "link4"];
 
   return (
@@ -19,4 +19,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Sponsors;

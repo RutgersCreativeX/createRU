@@ -21,12 +21,12 @@ const About = () => {
         </div>
 
         <div className={styles.column}>
-          <div className={styles.flexCenter}>
+          <div className={styles.flexCenter} data-scroll data-scroll-speed="2">
             <Image
-              src="/images/brickbuilding.svg"
-              alt="leftBuilding"
-              width={240}
-              height={315}
+              src="/images/buildingGroup.svg"
+              alt="buildingGroup"
+              width={565}
+              height={430}
             />
           </div>
         </div>
@@ -34,7 +34,7 @@ const About = () => {
 
       <div className={styles.container}>
         <div className={styles.column}>
-          <div className={styles.flexCenter}>
+          <div className={styles.flexCenter} data-scroll data-scroll-speed="2">
             <Image src="/images/city.svg" alt="city" width={520} height={315} />
           </div>
         </div>
@@ -54,10 +54,10 @@ const About = () => {
 
       <div className={styles.container}>
         <div className={styles.column}>
-          <div className={styles.flexCenter}>
+          <div className={styles.flexCenter} data-scroll data-scroll-speed="2">
             <Image
               src="/images/studying.svg"
-              alt="city"
+              alt="studying"
               width={450}
               height={315}
             />
@@ -83,12 +83,12 @@ const About = () => {
 
       <div className={styles.container}>
         <div className={styles.column}>
-          <div className={styles.flexCenter}>
+          <div className={styles.flexCenter} data-scroll data-scroll-speed="2">
             <Image
-              src="/images/studying.svg"
-              alt="city"
-              width={450}
-              height={315}
+              src="/images/phoneAndComp.svg"
+              alt="phoneAndComp"
+              width={550}
+              height={500}
             />
           </div>
         </div>
@@ -105,6 +105,9 @@ const About = () => {
               organizations? <br /> <br />
               For more information on the event, topics to explore, and event
               logistics, head over to our Event Information page.
+            </div>
+            <div className={styles.button}>
+              <a className={`blueButton `}>Register Now</a>
             </div>
           </div>
         </div>

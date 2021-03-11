@@ -11,7 +11,7 @@ const Nav = () => {
         </a>
       </Link>
       <div className={styles.right}>
-        <Link href="#">
+        <Link href="/">
           <a className={styles.tab}>Home</a>
         </Link>
         <Link href="#">

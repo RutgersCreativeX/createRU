@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { Hero, Nav, About, Sponsors } from "../components";
+import { Hero, Nav, About, Sponsors, Footer } from "../components";
 import { SmoothScrollProvider } from "../SmoothScroll.context";
 
 export default function Home() {
@@ -23,6 +23,7 @@ export default function Home() {
             <Hero />
             <Sponsors />
             <About />
+            <Footer />
           </div>
         </main>
       </SmoothScrollProvider>

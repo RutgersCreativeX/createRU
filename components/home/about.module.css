@@ -6,7 +6,7 @@
 }
 
 .container {
-  max-width: 2000px;
+  max-width: 1600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,4 +40,9 @@
 
 .rightCol {
   margin-left: 64px;
+}
+
+.button {
+  margin-top: 32px;
+  font-size: 24px;
 }
