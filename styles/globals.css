@@ -2,8 +2,13 @@
   --dark-blue: #061948;
   --blue: #3c6ce4;
 
-  --font-secular: "Secular One", sans-serif;
+  --font-avenir: "avenir";
   --font-noto: "Noto Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "avenir";
+  src: url("../public/avenirBold.otf") format("opentype");
 }
 
 html {
@@ -18,11 +23,12 @@ html.has-scroll-smooth {
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--font-secular);
+  font-family: var(--font-avenir);
   color: black;
 
   width: 100%;
   min-height: 100%;
+  font-size: 20px;
 }
 
 a {

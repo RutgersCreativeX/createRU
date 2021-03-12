@@ -28,3 +28,18 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 20px;
+    margin-top: 32px;
+  }
+
+  .grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 140px);
+    grid-gap: 14px;
+    margin: 32px 20px;
+  }
+}

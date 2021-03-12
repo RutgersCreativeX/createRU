@@ -11,7 +11,7 @@ const Footer = () => {
     },
     {
       link: "/images/instagramIcon.svg",
-      ref: "https://discord.com/",
+      ref: "https://www.instagram.com/rutgerscreativex/",
     },
     {
       link: "/images/facebookIcon.svg",
@@ -23,13 +23,20 @@ const Footer = () => {
     },
   ];
 
+  const email = "rutgerscreativex@gmail.com";
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>Contact Us</div>
       <div className={styles.inner}>
         <div>
           If you have any other questions/concerns, feel free to <br />
-          reach out to us via email: <a>rutgerscreativex@gmail.com</a>
+          reach out to us via email:&nbsp;
+          <a>
+            <a href={`mailto:${email}`} className={styles.bold}>
+              {email}
+            </a>
+          </a>
         </div>
 
         <div>
@@ -51,7 +58,7 @@ const Footer = () => {
           </div>
           <div>
             <a
-              href="https://www.rutgers.design/"
+              href="http://eepurl.com/hoUhlz"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.center}

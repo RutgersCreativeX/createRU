@@ -1,5 +1,4 @@
 import styles from "./about.module.css";
-import Link from "next/link";
 import Image from "next/image";
 
 const About = () => {
@@ -7,21 +6,34 @@ const About = () => {
     <div className={styles.background}>
       <div className={styles.container}>
         <div className={styles.column}>
-          <div className={styles.title}>
-            Why should we design for our community?
-          </div>
-          <div className={styles.description}>
-            Whether or not you’re a student at Rutgers, it’s likely that your
-            university has made a significant impact on the town it’s located
-            in. As student designers, we can try to address some of the social,
-            political, and economic issues beyond our campuses by exploring
-            problem spaces, working through the design thinking process, and
-            building with empathy.
+          <div className={styles.leftCol}>
+            <div className={styles.title}>
+              Why should we design for our community?
+            </div>
+            <div className={styles.description}>
+              <span className={styles.bold}>
+                Whether or not you’re a student at Rutgers,
+              </span>
+              it’s likely that your university has made a significant impact on
+              the town it’s located in. As student designers, we can try to
+              address some of the social, political, and economic issues beyond
+              our campuses by exploring problem spaces, working through the
+              design thinking process, and building with empathy.
+            </div>
           </div>
         </div>
 
         <div className={styles.column}>
           <div className={styles.flexCenter} data-scroll data-scroll-speed="2">
+            <Image
+              src="/images/buildingGroup.svg"
+              alt="buildingGroup"
+              width={565}
+              height={430}
+            />
+          </div>
+
+          <div className={styles.mobileImg}>
             <Image
               src="/images/buildingGroup.svg"
               alt="buildingGroup"
@@ -49,6 +61,9 @@ const About = () => {
               and landscape for Rutgers students.
             </div>
           </div>
+        </div>
+        <div className={styles.mobileImg}>
+          <Image src="/images/city.svg" alt="city" width={520} height={315} />
         </div>
       </div>
 
@@ -79,6 +94,14 @@ const About = () => {
             </div>
           </div>
         </div>
+        <div className={styles.mobileImg}>
+          <Image
+            src="/images/studying.svg"
+            alt="studying"
+            width={450}
+            height={315}
+          />
+        </div>
       </div>
 
       <div className={styles.container}>
@@ -107,9 +130,24 @@ const About = () => {
               logistics, head over to our Event Information page.
             </div>
             <div className={styles.button}>
-              <a className={`blueButton `}>Register Now</a>
+              <a
+                className={`blueButton`}
+                href="https://3613i9cyvrz.typeform.com/to/CHmHWmuh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Register Now
+              </a>
             </div>
           </div>
+        </div>
+        <div className={styles.mobileImg}>
+          <Image
+            src="/images/phoneCompMobile.svg"
+            alt="phoneAndComp"
+            width={550}
+            height={300}
+          />
         </div>
       </div>
     </div>
