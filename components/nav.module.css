@@ -1,14 +1,19 @@
 .container {
   position: fixed;
   width: 100%;
-  height: 100px;
+
   top: 0;
   /* background-color: white; */
+
+  padding: 0 104px;
+  z-index: 11;
+}
+
+.desktop {
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 104px;
-  z-index: 11;
 }
 
 .right {
@@ -32,10 +37,90 @@
   border-bottom: 2px solid black;
 }
 
+.hamburger {
+  display: none;
+}
+
+.sidebar {
+  display: none;
+}
+
+@keyframes fadeInRight {
+  0% {
+    /* width: 0px; */
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    /* width: 323px; */
+  }
+}
+
 @media (max-width: 768px) {
-  .container {
-    height: 40px;
+  .desktop {
     display: none;
-    padding: 0 20px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .hamburger {
+    /* position: fixed; */
+    height: 64px;
+    display: flex;
+    /* background-color: red; */
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 16px;
+  }
+
+  .sidebar {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 323px;
+    display: block;
+    animation: fadeInRight 0.25s ease forwards;
+    z-index: 100;
+  }
+
+  .inner {
+    margin: 35px 53px 41px 26px;
+    position: relative;
+    height: 100%;
+  }
+
+  .links {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+  }
+
+  .links a {
+    margin-bottom: 48px;
+    border-bottom: 2px solid transparent;
+    width: fit-content;
+  }
+
+  .icons {
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .icons li {
+    margin: 0 20px;
+  }
+
+  .active {
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    color: #d8645d;
   }
 }

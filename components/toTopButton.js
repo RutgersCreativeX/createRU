@@ -9,6 +9,7 @@ const toTopButton = () => {
     event.preventDefault();
     scroll && scroll.scrollTo(0);
   };
+
   return (
     <a
       className={styles.container}
@@ -16,6 +17,7 @@ const toTopButton = () => {
       data-scroll
       data-scroll-sticky
       data-scroll-target="#top"
+  
     >
       <img
         src="/images/toTop.svg"
