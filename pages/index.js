@@ -20,7 +20,7 @@ export default function Home() {
       <SmoothScrollProvider options={{ smooth: true }}>
         <div id="top">
           <Nav />
-          <ToTopButton />
+          {/* <ToTopButton /> */}
           <Hero />
           {/* <Sponsors /> */}
           <About />
