@@ -1,12 +1,12 @@
+import React from "react";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import LandingPresents from "../components/landing/LandingPresents.js";
-import LandingAbout from "../components/landing/LandingAbout.js";
-import LandingRegister from "../components/landing/LandingRegister.js";
+// import styles from "../styles/Home.module.css";
+import { Hero, Nav, About, Sponsors, Footer, ToTopButton } from "../components";
+import { SmoothScrollProvider } from "../SmoothScroll.context";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>createRU</title>
         <link rel="icon" href="/favicon.ico" />
@@ -17,23 +17,17 @@ export default function Home() {
         />
       </Head>
 
-      <main className={styles.main}>
-        <div>
-          <LandingPresents />
-          <div className={styles.hideMobile}>
-            <div className={styles.notice}>
-              Sign up for priority registration
-            </div>
-            <LandingRegister />
-          </div>
+      <SmoothScrollProvider options={{ smooth: true }}>
+        <div id="top">
+          <Nav />
+          <ToTopButton />
+          <Hero />
+          {/* <Sponsors /> */}
+          <About />
+
+          <Footer />
         </div>
-        <div>
-          <LandingAbout />
-          <div className={styles.showMobile}>
-            <LandingRegister />
-          </div>
-        </div>
-      </main>
-    </div>
+      </SmoothScrollProvider>
+    </>
   );
 }
