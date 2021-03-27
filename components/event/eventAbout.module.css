@@ -1,0 +1,153 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topContainer {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 104px;
+  margin-top: 180px;
+}
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 104px 120px;
+}
+
+.column {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-size: 64px;
+  line-height: 95%;
+  margin-bottom: 16px;
+  font-weight: 750;
+  color: var(--dark-blue);
+}
+
+.title {
+  color: var(--dark-blue);
+  font-size: 56px;
+  line-height: 56px;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  color: var(--dark-blue);
+  font-size: 32px;
+  line-height: 56px;
+}
+
+.date {
+  color: var(--orange);
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: #101217;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1%;
+  font-family: var(--font-noto);
+  margin-right: 48px;
+  margin-bottom: 32px;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftCol {
+  margin-right: 32px;
+}
+
+.rightCol {
+  margin-left: 64px;
+}
+
+.button {
+  margin-top: 32px;
+  font-size: 24px;
+}
+
+.mobileImg {
+  margin-top: 16px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media (min-width: 900px) {
+  .mobileImg {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .flexCenter {
+    display: none;
+  }
+
+  .topContainer {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .background {
+    margin: 0 20px;
+  }
+  .container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    font-size: 48px;
+    line-height: 95%;
+  }
+  .date {
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 66px;
+  }
+  .subtitle {
+    font-size: 24px;
+    line-height: 145%;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+  }
+
+  .leftCol {
+    margin: 0;
+  }
+
+  .flexCenter {
+    display: none;
+  }
+}

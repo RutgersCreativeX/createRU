@@ -1,0 +1,140 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  font-size: 64px;
+  line-height: 95%;
+  margin: 80px 0px 16px 104px;
+  font-weight: 750;
+  color: var(--dark-blue);
+}
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  margin: 8px 104px;
+}
+
+.topContainer {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 104px 32px 104px;
+}
+
+.column {
+  flex: 50%;
+}
+
+.title {
+  color: #101217;
+  font-size: 36px;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+}
+
+.steps {
+  color: var(--orange);
+  font-size: 24px;
+  line-height: 150%;
+  font-family: var(--font-noto);
+  margin-bottom: 8px;
+}
+
+.description {
+  color: #101217;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1%;
+  font-family: var(--font-noto);
+  margin-right: 48px;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -72px;
+}
+.leftCol {
+  margin-right: 32px;
+}
+
+.rightCol {
+  margin-left: 64px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media (min-width: 900px) {
+  .mobileImg {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .flexCenter {
+    display: none;
+  }
+
+  .flexLeft {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    margin: 0 20px;
+  }
+  .topContainer {
+    margin: 0 20px;
+  }
+  .container {
+    margin: 0 20px;
+  }
+  .header {
+    font-size: 48px;
+    line-height: 95%;
+  }
+  .steps {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+  .description {
+    font-size: 18px;
+    line-height: 160%;
+  }
+
+  .topContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .rightCol {
+    margin: 0;
+  }
+}

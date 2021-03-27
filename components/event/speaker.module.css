@@ -1,0 +1,146 @@
+.background {
+  background-color: #6d83bb;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 56px;
+  line-height: 76px;
+  color: #ffffff;
+  margin: 80px 0px 31px 104px;
+}
+
+.header {
+  font-size: 56px;
+  line-height: 76px;
+  color: #ffffff;
+  margin-bottom: 29px;
+}
+
+.thank {
+  font-size: 56px;
+  line-height: 76px;
+  color: #ffffff;
+  align-self: center;
+  margin-top: 120px;
+}
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 104px 24px;
+}
+
+.speakerPhoto {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.keynote {
+  display: flex;
+  align-items: center;
+  margin-bottom: 130px;
+}
+
+.speakerDescription {
+  max-width: 571px;
+  margin-left: 80px;
+}
+
+.name {
+  font-family: var(--font-avenir);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.blurb {
+  font-family: var(--font-noto);
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+.judgeGrid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 170.67px;
+}
+
+.judges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 29px;
+  margin-top: 29px;
+}
+
+.judgePhoto {
+  width: 180px;
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 123px;
+}
+.judgeName {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.judgeOrg {
+  font-family: var(--font-noto);
+  font-size: 20px;
+  line-height: 27px;
+  color: #cccccc;
+}
+
+.sponsorGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-self: center;
+  column-gap: 24px;
+  margin-top: 31px;
+  margin-bottom: 80px;
+}
+
+.card {
+  background: #465d96;
+  border-radius: 16px;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76px;
+}
+
+@media (max-width: 768px) {
+  .background {
+    margin: 0 20px;
+  }
+
+  /* .judgeGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsorGrid {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+}

@@ -72,14 +72,22 @@ const Nav = () => {
           </Link>
           <div className={styles.right}>
             <Link href="/">
-              <a className={styles.tab}>
-                <span className={router.pathname == "/" ? styles.active : ""}>
-                  Home
-                </span>
+              <a
+                className={router.pathname == "/" ? styles.active : styles.tab}
+              >
+                Home
               </a>
             </Link>
-            <Link href="/">
-              <a className={styles.tab}>Event Details</a>
+            <Link href="/eventDetails">
+              <a
+                className={
+                  router.pathname == "/eventDetails"
+                    ? styles.active
+                    : styles.tab
+                }
+              >
+                Event Details
+              </a>
             </Link>
 
             <a
@@ -115,8 +123,16 @@ const Nav = () => {
                     </span>
                   </a>
                 </Link>
-                <Link href="/">
-                  <a>Event Details</a>
+                <Link href="/eventDetails">
+                  <a>
+                    <span
+                      className={
+                        router.pathname == "/eventDetails" ? styles.active : ""
+                      }
+                    >
+                      Event Details
+                    </span>
+                  </a>
                 </Link>
                 <a
                   href="https://forms.gle/LpggPoBtTTpgUhsq8 "
