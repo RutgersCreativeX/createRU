@@ -1,0 +1,129 @@
+.background {
+  background-color: #fcece8;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 104px 24px;
+}
+
+.title {
+  color: var(--dark-blue);
+  font-size: 56px;
+  line-height: 56px;
+  margin-top: 80px;
+}
+
+.description {
+  color: #101217;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1%;
+  margin-top: 16px;
+  font-family: var(--font-noto);
+  max-width: 642px;
+}
+
+.grid {
+  display: grid;
+  margin: 0px 104px 80px 104px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 3px solid #2e1a16;
+  height: 487px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.prompt {
+  color: var(--orange);
+  font-family: var(--font-avenir);
+  letter-spacing: 2.5px;
+  font-size: 18px;
+}
+
+.cardDescription {
+  color: #343b49;
+  font-size: 20px;
+  font-family: var(--font-noto);
+  max-width: 330.67px;
+  max-height: 203.5px;
+  margin: 40px 32px 0px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flexCenter {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .background {
+    max-width: 768px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 66px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+  }
+
+  .cardDescription {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    margin: 0;
+  }
+
+  .prompt {
+    font-size: 15px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+  }
+
+  .bold {
+    font-size: 18px;
+    line-height: 145%;
+  }
+
+  .card {
+    width: 240px;
+    height: 319px;
+    padding: 20px;
+  }
+
+  .flexCenter {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    margin: 0;
+  }
+}

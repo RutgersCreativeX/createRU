@@ -36,7 +36,7 @@ const Hero = () => {
                 prototyping addressing problems relating to education, business,
                 or health in your community.
               </div>
-              <Link href="#">
+              <Link href="/eventDetails">
                 <a className={`blueButton ${styles.button}`}>Event Details</a>
               </Link>
             </div>

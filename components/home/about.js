@@ -12,7 +12,7 @@ const About = () => {
             </div>
             <div className={styles.description}>
               <span className={styles.bold}>
-                Whether or not you’re a student at Rutgers,
+                Whether or not you’re a student at Rutgers,{" "}
               </span>
               it’s likely that your university has made a significant impact on
               the town it’s located in. As student designers, we can try to
