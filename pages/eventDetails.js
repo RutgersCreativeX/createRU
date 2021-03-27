@@ -12,7 +12,6 @@ import {
   Faq,
   Speaker,
 } from "../components";
-import { About } from "../components";
 import { SmoothScrollProvider } from "../SmoothScroll.context";
 
 export default function eventDetails() {

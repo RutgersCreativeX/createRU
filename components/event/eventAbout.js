@@ -8,7 +8,7 @@ const EventAbout = () => {
         <div className={styles.column}>
           <div className={styles.flexCenter}>
             <Image
-              class={styles.vidReplace}
+              className={styles.vidReplace}
               src="/images/videoplacehold.svg"
               alt="videoplacehold"
               width={615}
