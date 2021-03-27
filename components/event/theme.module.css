@@ -2,6 +2,7 @@
   background-color: #fcece8;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -9,14 +10,13 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0px 104px 24px;
 }
 
 .title {
   color: var(--dark-blue);
   font-size: 56px;
   line-height: 56px;
-  margin-top: 80px;
+  margin: 40px 80px;
 }
 
 /* .description {
@@ -44,6 +44,7 @@
   padding: 19.5px 64px;
   justify-content: center;
   align-items: center;
+  max-width: 1600px;
 }
 
 /* .prompt {
@@ -87,6 +88,9 @@
 }
 
 @media (max-width: 900px) {
+  .title {
+    margin: 20px;
+  }
   .container {
     margin: 0px 60px 24px;
   }

@@ -9,8 +9,8 @@ const EventAbout = () => {
           <div className={styles.flexCenter}>
             <Image
               className={styles.vidReplace}
-              src="/images/videoplacehold.svg"
-              alt="videoplacehold"
+              src="/images/noVideo.svg"
+              alt="noVideo"
               width={615}
               height={349}
             />
@@ -18,6 +18,7 @@ const EventAbout = () => {
         </div>
         <div className={styles.column}>
           <div className={styles.rightCol}>
+            <div className={styles.pageTitle}>EVENT DETAILS</div>
             <div className={styles.header}>createRU — Designathon</div>
             <div className={styles.date}>
               April 10 - April 11, 2020 <br /> 12pm to 4pm EST

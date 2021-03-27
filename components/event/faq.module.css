@@ -1,6 +1,7 @@
 .background {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -17,9 +18,10 @@
   font-size: 56px;
   line-height: 76px;
   color: #101217;
-  margin-top: 80px;
-  margin-bottom: 60px;
+
   align-self: center;
+
+  margin: 80px 50px 60px;
 }
 
 .left {
@@ -68,4 +70,19 @@
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftInner {
+    /* background-color: red; */
+    margin-right: 0px;
+  }
+  .rightInner {
+    /* background-color: red; */
+    margin-left: 0px;
+  }
 }

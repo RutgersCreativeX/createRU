@@ -2,6 +2,7 @@
   background-color: #6d83bb;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .title {

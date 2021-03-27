@@ -17,28 +17,30 @@ const Theme = () => {
             following three prompts.
           </div> */}
         </div>
-      </div>
-      <div className={styles.card}>
-        <div className={styles.flexCenter}>
-          <Image
-            src="/images/education.svg"
-            alt="videoplacehold"
-            width={448}
-            height={448}
-          />
-        </div>
-        <div className={styles.cardDescription}>
-          {/* <div className={styles.prompt}>PROMPT 1</div> */}
-          <div className={styles.subtitle}>Design for your local community</div>
-          <div className={styles.blurb}>
-            This year’s theme revolves around{" "}
-            <span className={styles.bold}>
-              supporting your local community.
-            </span>
+
+        <div className={styles.card}>
+          <div className={styles.flexCenter}>
+            <Image
+              src="/images/education.svg"
+              alt="videoplacehold"
+              width={448}
+              height={448}
+            />
+          </div>
+          <div className={styles.cardDescription}>
+            {/* <div className={styles.prompt}>PROMPT 1</div> */}
+            <div className={styles.subtitle}>
+              Design for your local community
+            </div>
+            <div className={styles.blurb}>
+              This year’s theme revolves around{" "}
+              <span className={styles.bold}>
+                supporting your local community.
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-      {/* <div className={styles.card}>
+        {/* <div className={styles.card}>
         <div className={styles.flexCenter}>
           <Image
             src="/images/business.svg"
@@ -72,6 +74,7 @@ const Theme = () => {
           people, teachers, employees, and more
         </div>
       </div> */}
+      </div>
     </div>
   );
 };

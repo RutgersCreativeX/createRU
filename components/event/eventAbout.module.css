@@ -103,10 +103,17 @@
 
 .mobileImg {
   margin-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .bold {
   font-weight: 700;
+}
+
+.pageTitle {
+  display: none;
 }
 
 @media (min-width: 900px) {
@@ -139,7 +146,7 @@
   }
 
   .container {
-    margin: 0 60px;
+    margin: 32px 60px;
     flex-direction: column;
   }
 
@@ -149,16 +156,20 @@
 }
 
 @media (max-width: 768px) {
+  .pageTitle {
+    display: block;
+    color: #e36c52;
+    font-size: 15px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+  }
   .topContainer {
     flex-direction: column;
     margin: 80px 20px 40px 20px;
   }
 
-  .tempTopContainer {
-    margin: 80px 20px 20px 20px;
-  }
   .container {
-    margin: 0 20px;
+    margin: 20px;
     flex-direction: column;
   }
   .header {
