@@ -29,7 +29,7 @@ const Speaker = () => {
         <div className={styles.keynote}>
           <div className={styles.speakerPhoto}></div>
           <div className={styles.speakerDescription}>
-            <div className={styles.name}>Name of Spaker</div>
+            <div className={styles.name}>Name of Speaker</div>
             <div className={styles.blurb}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
               tristique tellus turpis molestie mauris, amet. Egestas placerat
@@ -41,14 +41,14 @@ const Speaker = () => {
         </div>
         <div className={styles.header}>Judges</div>
         <div className={styles.judgeGrid}>
-          {displayJudges("url", "ed", "cretiveX")}
-          {displayJudges("url", "ed", "cretiveX")}
-          {displayJudges("url", "ed", "cretiveX")}
-          {displayJudges("url", "ed", "cretiveX")}
-          {displayJudges("url", "ed", "cretiveX")}
-          {displayJudges("url", "ed", "cretiveX")}
-          {displayJudges("url", "ed", "cretiveX")}
-          {displayJudges("url", "ed", "cretiveX")}
+          {displayJudges("url", "Judge", "Organization")}
+          {displayJudges("url", "Judge", "Organization")}
+          {displayJudges("url", "Judge", "Organization")}
+          {displayJudges("url", "Judge", "Organization")}
+          {displayJudges("url", "Judge", "Organization")}
+          {displayJudges("url", "Judge", "Organization")}
+          {displayJudges("url", "Judge", "Organization")}
+          {displayJudges("url", "Judge", "Organization")}
         </div>
         <div className={styles.thank}>Thank you to our sponsors</div>
         <div className={styles.sponsorGrid}>

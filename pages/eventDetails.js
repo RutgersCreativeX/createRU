@@ -34,8 +34,8 @@ export default function eventDetails() {
           <EventAbout />
           <Theme />
           <HowItWorks />
-          <Schedule />
-          <Faq />
+          {/* <Schedule /> */}
+          {/* <Faq /> */}
           <Speaker />
           <Footer />
         </div>

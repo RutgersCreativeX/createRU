@@ -9,19 +9,18 @@ const EventAbout = () => {
           <div className={styles.flexCenter}>
             <Image
               class={styles.vidReplace}
-              src="/images/videoplacehold.svg"
-              alt="videoplacehold"
+              src="/images/noVideo.svg"
+              alt="noVideo"
               width={615}
               height={349}
             />
           </div>
-          {/* </div>
-
-        <div className={styles.column}> */}
+        </div>
+        <div className={styles.column}>
           <div className={styles.rightCol}>
             <div className={styles.header}>createRU — Designathon</div>
             <div className={styles.date}>
-              April 10 - April 11, 2020 <br /> 12pm to 12pm EST
+              April 10 - April 11, 2020 <br /> 12pm to 4pm EST
             </div>
             <div className={styles.description}>
               Calling on students interested in product design, UI/UX, design
@@ -32,10 +31,10 @@ const EventAbout = () => {
         </div>
         <div className={styles.mobileImg}>
           <Image
-            src="/images/videoplacehold.svg"
-            alt="videoplacehold"
-            width={520}
-            height={315}
+            src="/images/noVideo.svg"
+            alt="noVideo"
+            width={615}
+            height={439}
           />
         </div>
       </div>
@@ -84,7 +83,11 @@ const EventAbout = () => {
         </div>
 
         <div className={styles.column}>
-          <div className={styles.flexCenter} data-scroll data-scroll-speed="2">
+          <div
+            className={`${styles.flexCenter} ${styles.puzzlePeople}`}
+            data-scroll
+            data-scroll-speed="2"
+          >
             <Image
               src="/images/puzzlepeople.svg"
               alt="puzzlepeople"
@@ -97,8 +100,8 @@ const EventAbout = () => {
             <Image
               src="/images/puzzlepeople.svg"
               alt="puzzlepeople"
-              width={150}
-              height={160}
+              width={264}
+              height={213}
             />
           </div>
         </div>
