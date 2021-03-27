@@ -19,15 +19,13 @@
   margin-top: 80px;
 }
 
-.description {
+/* .description {
   color: #101217;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 1%;
-  margin-top: 16px;
   font-family: var(--font-noto);
-  max-width: 642px;
-}
+} */
 
 .grid {
   display: grid;
@@ -42,26 +40,26 @@
   height: 487px;
   border-radius: 24px;
   display: flex;
-  flex-direction: column;
+  margin: 24px 104px 168px;
+  padding: 19.5px 64px;
+  justify-content: center;
+  align-items: center;
 }
 
-.prompt {
+/* .prompt {
   color: var(--orange);
   font-family: var(--font-avenir);
   letter-spacing: 2.5px;
   font-size: 18px;
-}
+} */
 
 .cardDescription {
   color: #343b49;
   font-size: 20px;
   font-family: var(--font-noto);
-  max-width: 330.67px;
-  max-height: 203.5px;
-  margin: 40px 32px 0px 32px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin-left: 32px;
 }
 
 .flexCenter {
@@ -70,15 +68,52 @@
   justify-content: center;
   align-items: center;
 }
+.subtitle {
+  font-family: var(--font-avenir);
+  font-size: 32px;
+  line-height: 145%;
+  color: #061948;
+}
+
+.blurb {
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+}
 
 .bold {
   font-weight: 700;
   margin-bottom: 8px;
 }
 
+@media (max-width: 900px) {
+  .container {
+    margin: 0px 60px 24px;
+  }
+  .card {
+    flex-direction: column;
+    padding-top: 0;
+    margin: 24px 60px 168px;
+  }
+
+  .flexCenter {
+    width: 192px;
+    height: 192px;
+    margin-bottom: 32px;
+  }
+}
 @media (max-width: 768px) {
-  .background {
-    max-width: 768px;
+  .container {
+    margin: 0px 20px 24px;
+  }
+
+  .card {
+    flex-direction: column;
+    padding-top: 0;
+    margin: 0px 20px 40px;
+    padding: 19.5px 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   .grid {
@@ -88,6 +123,7 @@
   .title {
     font-size: 48px;
     line-height: 66px;
+    margin-top: 44px;
   }
 
   .description {
@@ -96,10 +132,18 @@
     letter-spacing: 0.01em;
   }
 
-  .cardDescription {
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .blurb {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.01em;
+    margin: 0;
+  }
+
+  .cardDescription {
     margin: 0;
   }
 
@@ -110,20 +154,7 @@
   }
 
   .bold {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 145%;
-  }
-
-  .card {
-    width: 240px;
-    height: 319px;
-    padding: 20px;
-  }
-
-  .flexCenter {
-    width: 100px;
-    height: 100px;
-    align-self: center;
-    margin: 0;
   }
 }
