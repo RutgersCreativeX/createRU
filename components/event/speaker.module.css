@@ -72,7 +72,7 @@
 .judgeGrid {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   column-gap: 170.67px;
 }
 
@@ -114,7 +114,7 @@
 
 .sponsorGrid {
   display: grid;
-  grid-template-columns: repeat(5, 179px);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-self: center;
   column-gap: 24px;
   margin-top: 31px;
@@ -130,16 +130,17 @@
   align-items: center;
   height: 76px;
 }
+
 @media (max-width: 768px) {
   .background {
     margin: 0 20px;
   }
 
-  .judgeGrid {
-    grid-template-columns: 1fr;
+  /* .judgeGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .sponsorGrid {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 }

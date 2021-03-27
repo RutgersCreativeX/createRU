@@ -3,6 +3,25 @@ import Image from "next/image";
 
 const Speaker = () => {
   const sponsors = ["link1", "link2", "link3", "link4", "link5"];
+
+  const displayJudges = (photo, name, organization) => {
+    return (
+      <div className={styles.judges}>
+        <div className={styles.judgePhoto}></div>
+        {/*  <Image
+              src={photo}
+              alt="judge"
+              width={180}
+              height={180}
+            /> */}
+        <div className={styles.detail}>
+          <div className={styles.judgeName}>{name}</div>
+          <div className={styles.judgeOrg}>{organization}</div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className={styles.background}>
       <div className={styles.title}>Keynote Speaker</div>
@@ -22,62 +41,14 @@ const Speaker = () => {
         </div>
         <div className={styles.header}>Judges</div>
         <div className={styles.judgeGrid}>
-          <div className={styles.judges}>
-            <div className={styles.judgePhoto}></div>
-            <div className={styles.detail}>
-              <div className={styles.judgeName}>Name</div>
-              <div className={styles.judgeOrg}>Organization</div>
-            </div>
-          </div>
-          <div className={styles.judges}>
-            <div className={styles.judgePhoto}></div>
-            <div className={styles.detail}>
-              <div className={styles.judgeName}>Name</div>
-              <div className={styles.judgeOrg}>Organization</div>
-            </div>
-          </div>
-          <div className={styles.judges}>
-            <div className={styles.judgePhoto}></div>
-            <div className={styles.detail}>
-              <div className={styles.judgeName}>Name</div>
-              <div className={styles.judgeOrg}>Organization</div>
-            </div>
-          </div>
-          <div className={styles.judges}>
-            <div className={styles.judgePhoto}></div>
-            <div className={styles.detail}>
-              <div className={styles.judgeName}>Name</div>
-              <div className={styles.judgeOrg}>Organization</div>
-            </div>
-          </div>
-          <div className={styles.judges}>
-            <div className={styles.judgePhoto}></div>
-            <div className={styles.detail}>
-              <div className={styles.judgeName}>Name</div>
-              <div className={styles.judgeOrg}>Organization</div>
-            </div>
-          </div>
-          <div className={styles.judges}>
-            <div className={styles.judgePhoto}></div>
-            <div className={styles.detail}>
-              <div className={styles.judgeName}>Name</div>
-              <div className={styles.judgeOrg}>Organization</div>
-            </div>
-          </div>
-          <div className={styles.judges}>
-            <div className={styles.judgePhoto}></div>
-            <div className={styles.detail}>
-              <div className={styles.judgeName}>Name</div>
-              <div className={styles.judgeOrg}>Organization</div>
-            </div>
-          </div>
-          <div className={styles.judges}>
-            <div className={styles.judgePhoto}></div>
-            <div className={styles.detail}>
-              <div className={styles.judgeName}>Name</div>
-              <div className={styles.judgeOrg}>Organization</div>
-            </div>
-          </div>
+          {displayJudges("url", "ed", "cretiveX")}
+          {displayJudges("url", "ed", "cretiveX")}
+          {displayJudges("url", "ed", "cretiveX")}
+          {displayJudges("url", "ed", "cretiveX")}
+          {displayJudges("url", "ed", "cretiveX")}
+          {displayJudges("url", "ed", "cretiveX")}
+          {displayJudges("url", "ed", "cretiveX")}
+          {displayJudges("url", "ed", "cretiveX")}
         </div>
         <div className={styles.thank}>Thank you to our sponsors</div>
         <div className={styles.sponsorGrid}>

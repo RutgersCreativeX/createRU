@@ -135,6 +135,12 @@
   font-weight: lighter;
 }
 
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .cardOne {
   position: absolute;
   top: 135px;

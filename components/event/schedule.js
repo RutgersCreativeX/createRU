@@ -12,7 +12,7 @@ const Schedule = () => {
         </div>
         <div className={styles.schedule}>
           <div className={styles.line}></div>
-          <div className={styles.circle + ` ` + styles.one}></div>
+          <div className={`${styles.circle} ${styles.one}`}></div>
           <div className={styles.circle + ` ` + styles.two}></div>
           <div className={styles.circle + ` ` + styles.three}></div>
           <div className={styles.smallLine + ` ` + styles.lineOne}></div>
@@ -25,7 +25,7 @@ const Schedule = () => {
               Event details describing the speaker, workshop, ceremony, etc.
             </div>
             <a
-              className="blueButton"
+              className={`blueButton ${styles.button}`}
               href="/"
               target="_blank"
               rel="noopener noreferrer"

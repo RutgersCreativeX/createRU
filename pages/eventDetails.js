@@ -11,7 +11,7 @@ import {
   Schedule,
   Faq,
   Speaker,
-} from "../components/eventDetails";
+} from "../components";
 import { About } from "../components";
 import { SmoothScrollProvider } from "../SmoothScroll.context";
 
