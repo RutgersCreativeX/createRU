@@ -12,6 +12,7 @@ const Nav = () => {
   const [shadow, setShadow] = useState("none");
 
   const [open, setOpen] = useState(false);
+  const router = useRouter();
 
   const links = [
     {
@@ -37,24 +38,28 @@ const Nav = () => {
     setOpen(!open);
   };
 
-  scroll &&
-    scroll.on("scroll", (data) => {
-      if (data.delta.y > window.innerHeight) {
-        setBG("white");
-        setShadow("0px 1px 1px rgba(0, 0, 0, 0.1)");
-      } else {
-        setBG("transparent");
-        setShadow("none");
-      }
-    });
-
-  const router = useRouter();
+  if (router.pathname == "/") {
+    scroll &&
+      scroll.on("scroll", (data) => {
+        if (data.delta.y > window.innerHeight) {
+          setBG("white");
+          setShadow("0px 1px 1px rgba(0, 0, 0, 0.1)");
+        } else {
+          setBG("transparent");
+          setShadow("none");
+        }
+      });
+  }
 
   return (
     <>
       <div
         className={styles.container}
-        style={{ backgroundColor: bg, boxShadow: shadow }}
+        style={{
+          backgroundColor: router.pathname == "/" ? bg : "white",
+          boxShadow:
+            router.pathname == "/" ? shadow : "0px 1px 1px rgba(0, 0, 0, 0.1)",
+        }}
         data-scroll
         data-scroll-sticky
         data-scroll-target="#top"
