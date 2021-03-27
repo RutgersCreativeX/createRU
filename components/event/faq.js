@@ -4,26 +4,12 @@ import Image from "next/image";
 import SlideToggle from "react-slide-toggle";
 
 const Faq = () => {
-  const [color, changeColor] = useState("black");
-  const [fontWeight, changefontWeight] = useState(400);
-  const [plusIcon, changeIcon] = useState(true);
-
   const renderQuestion = (question, answer) => {
     return (
-      <div className={styles.mb}>
+      <div style={{ marginBottom: "32px" }}>
         <SlideToggle
           collapsed
-          onExpanding={() => {
-            changeColor("orange");
-            changefontWeight(700);
-            changeIcon(false);
-          }}
-          onCollapsed={({ hasReversed }) => {
-            changeColor("black");
-            changefontWeight(400);
-            changeIcon(true);
-          }}
-          render={({ toggle, setCollapsibleElement }) => (
+          render={({ toggle, setCollapsibleElement, toggleState }) => (
             <div className="my-collapsible">
               <a
                 className={`${styles.questionContainer} my-collapsible__toggle`}
@@ -31,29 +17,32 @@ const Faq = () => {
               >
                 <div
                   className={styles.question}
-                  // style={{ color: color, fontWeight: fontWeight }}
+                  style={{
+                    color: toggleState == "COLLAPSED" ? "black" : "#e36c52",
+                    fontWeight: toggleState == "COLLAPSED" ? "400" : "700",
+                  }}
                 >
                   {question}
                 </div>
-                {plusIcon ? (
-                  <div>
+                <div style={{ marginLeft: "24px" }}>
+                  {toggleState == "COLLAPSED" ? (
                     <Image
                       src="/images/plusIcon.svg"
                       alt="icons_plus"
                       width={30}
                       height={30}
+                      layout="fixed"
                     />
-                  </div>
-                ) : (
-                  <div>
+                  ) : (
                     <Image
+                      layout="fixed"
                       src="/images/minusIcon.svg"
                       alt="icons_minus"
                       width={30}
                       height={30}
                     />
-                  </div>
-                )}
+                  )}
+                </div>
               </a>
               <div
                 className="my-collapsible__content"

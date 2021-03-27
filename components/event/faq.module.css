@@ -47,25 +47,13 @@
   display: flex;
   /* background-color: red; */
   justify-content: space-between;
-}
-.mb {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .question {
   font-family: var(--font-noto);
   font-size: 20px;
   line-height: 27px;
-  /* margin-bottom: 40px; */
-}
-
-.question:hover {
-  color: #e36c52;
-  cursor: pointer;
-}
-
-.question:active {
-  color: #e36c52;
 }
 
 .answer {
