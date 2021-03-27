@@ -58,12 +58,8 @@
 
 .answer {
   font-family: var(--font-noto);
-  font-size: 20px;
-  line-height: 27px;
-  width: 518px;
   border-bottom: 2px solid #e36c52;
   padding-bottom: 16px;
-  margin-bottom: 24px;
 }
 
 .link {

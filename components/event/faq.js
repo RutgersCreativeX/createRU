@@ -9,7 +9,12 @@ const Faq = () => {
       <div style={{ marginBottom: "32px" }}>
         <SlideToggle
           collapsed
-          render={({ toggle, setCollapsibleElement, toggleState }) => (
+          render={({
+            toggle,
+            setCollapsibleElement,
+            toggleState,
+            progress,
+          }) => (
             <div className="my-collapsible">
               <a
                 className={`${styles.questionContainer} my-collapsible__toggle`}
@@ -45,10 +50,13 @@ const Faq = () => {
                 </div>
               </a>
               <div
-                className="my-collapsible__content"
+                className={`my-collapsible__content`}
                 ref={setCollapsibleElement}
+                style={{
+                  fontWeight: "400",
+                }}
               >
-                {answer}
+                <div className={styles.answer}>{answer}</div>
               </div>
             </div>
           )}
@@ -65,19 +73,17 @@ const Faq = () => {
           <div className={styles.leftInner}>
             {renderQuestion(
               "What if I don't have a team?",
-              <div className="my-collapsible__content-inner">
-                <div className={styles.answer}>
-                  No sweat, check out our&nbsp;
-                  <a
-                    href="https://www.figma.com/file/TulF7EpRXYEcGu5ozurVwq/Find-a-Team!?node-id=0%3A1"
-                    target="_blank"
-                    className={styles.link}
-                  >
-                    Figma file
-                  </a>
-                  &nbsp;to meet other participants. We will also have a team
-                  formation channel in our createRU slack.
-                </div>
+              <div>
+                No sweat, check out our&nbsp;
+                <a
+                  href="https://www.figma.com/file/TulF7EpRXYEcGu5ozurVwq/Find-a-Team!?node-id=0%3A1"
+                  target="_blank"
+                  className={styles.link}
+                >
+                  Figma file
+                </a>
+                &nbsp;to meet other participants. We will also have a team
+                formation channel in our createRU slack.
               </div>
             )}
 
