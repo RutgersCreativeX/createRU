@@ -1,0 +1,164 @@
+.background {
+  background-color: #fcece8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--dark-blue);
+  font-size: 56px;
+  line-height: 56px;
+  margin: 40px 80px;
+}
+
+/* .description {
+  color: #101217;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1%;
+  font-family: var(--font-noto);
+} */
+
+.grid {
+  display: grid;
+  margin: 0px 104px 80px 104px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 3px solid #2e1a16;
+  height: 487px;
+  border-radius: 24px;
+  display: flex;
+  margin: 24px 104px 168px;
+  padding: 19.5px 64px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+}
+
+/* .prompt {
+  color: var(--orange);
+  font-family: var(--font-avenir);
+  letter-spacing: 2.5px;
+  font-size: 18px;
+} */
+
+.cardDescription {
+  color: #343b49;
+  font-size: 20px;
+  font-family: var(--font-noto);
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.flexCenter {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subtitle {
+  font-family: var(--font-avenir);
+  font-size: 32px;
+  line-height: 145%;
+  color: #061948;
+}
+
+.blurb {
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+}
+
+.bold {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .title {
+    margin: 20px;
+  }
+  .container {
+    margin: 0px 60px 24px;
+  }
+  .card {
+    flex-direction: column;
+    padding-top: 0;
+    margin: 24px 60px 168px;
+  }
+
+  .flexCenter {
+    width: 192px;
+    height: 192px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0px 20px 24px;
+  }
+
+  .card {
+    flex-direction: column;
+    padding-top: 0;
+    margin: 0px 20px 40px;
+    padding: 19.5px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 66px;
+    margin-top: 44px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .blurb {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    margin: 0;
+  }
+
+  .cardDescription {
+    margin: 0;
+  }
+
+  .prompt {
+    font-size: 15px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+  }
+
+  .bold {
+    font-size: 16px;
+    line-height: 145%;
+  }
+}

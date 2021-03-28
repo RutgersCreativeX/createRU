@@ -1,10 +1,20 @@
 import React from "react";
 import Head from "next/head";
 // import styles from "../styles/Home.module.css";
-import { Hero, Nav, About, Sponsors, Footer, ToTopButton } from "../components";
+import {
+  Nav,
+  Footer,
+  ToTopButton,
+  EventAbout,
+  Theme,
+  HowItWorks,
+  Schedule,
+  Faq,
+  Speaker,
+} from "../components";
 import { SmoothScrollProvider } from "../SmoothScroll.context";
 
-export default function Home() {
+export default function eventDetails() {
   return (
     <>
       <Head>
@@ -20,11 +30,12 @@ export default function Home() {
       <SmoothScrollProvider options={{ smooth: true }}>
         <div id="top">
           <Nav />
-          {/* <ToTopButton /> */}
-          <Hero />
-          {/* <Sponsors /> */}
-          <About />
-
+          <EventAbout />
+          <Theme />
+          <HowItWorks />
+          {/* <Schedule /> */}
+          <Faq />
+          {/* <Speaker /> */}
           <Footer />
         </div>
       </SmoothScrollProvider>
