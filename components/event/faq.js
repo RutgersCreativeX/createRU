@@ -68,6 +68,7 @@ const Faq = () => {
   return (
     <div className={styles.background}>
       <div className={styles.title}>Frequently Asked Questions</div>
+      <div className={styles.faq}>FAQ</div>
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={styles.leftInner}>

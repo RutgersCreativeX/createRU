@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .header {
@@ -19,7 +18,7 @@
   justify-content: center;
   align-items: center;
   /* background-color: red; */
-  margin: 80px 104px;
+  margin: 30px 104px;
 }
 
 .topContainer {
@@ -69,7 +68,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: -72px;
 }
 .leftCol {
   margin-right: 32px;
@@ -87,8 +85,15 @@
   .topContainer {
     margin: 0 60px;
   }
+  .container {
+    margin: 20px 60px;
+  }
   .header {
-    margin: 80px 0 16px 60px;
+    margin: 80px 60px 16px 60px;
+  }
+
+  .background {
+    align-items: center;
   }
 }
 
@@ -155,5 +160,11 @@
   }
   .leftCol {
     margin: 0;
+  }
+}
+
+@media (min-width: 1441px) {
+  .background {
+    align-items: center;
   }
 }

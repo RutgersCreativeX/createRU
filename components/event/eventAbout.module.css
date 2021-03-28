@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 120px 104px;
+  margin: 191px 120px 104px;
 }
 
 .container {
@@ -114,6 +114,7 @@
 
 .pageTitle {
   display: none;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 900px) {
