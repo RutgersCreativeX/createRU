@@ -48,7 +48,7 @@
 .selectedDay {
   font-size: 24;
   line-height: 145%;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.08em;
   width: 403px;
   height: 51px;
@@ -61,7 +61,7 @@
 .day {
   font-size: 24;
   line-height: 145%;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.08em;
   width: 403px;
   height: 51px;

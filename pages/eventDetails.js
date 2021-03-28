@@ -12,7 +12,6 @@ import {
   Faq,
   Speaker,
 } from "../components";
-import { About } from "../components";
 import { SmoothScrollProvider } from "../SmoothScroll.context";
 
 export default function eventDetails() {
@@ -34,9 +33,9 @@ export default function eventDetails() {
           <EventAbout />
           <Theme />
           <HowItWorks />
-          <Schedule />
+          {/* <Schedule /> */}
           <Faq />
-          <Speaker />
+          {/* <Speaker /> */}
           <Footer />
         </div>
       </SmoothScrollProvider>

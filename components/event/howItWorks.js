@@ -7,6 +7,14 @@ const HowItWorks = () => {
       <div className={styles.header}>How createRU works</div>
       <div className={styles.topContainer}>
         <div className={styles.column}>
+          <div className={styles.mobileImg}>
+            <Image
+              src="/images/research.svg"
+              alt="research"
+              width={335}
+              height={228}
+            />
+          </div>
           <div className={styles.leftCol}>
             <div className={styles.steps}>| Step 1</div>
             <div className={styles.title}>Research</div>
@@ -21,15 +29,6 @@ const HowItWorks = () => {
 
         <div className={styles.column}>
           <div className={styles.flexCenter} data-scroll data-scroll-speed="2">
-            <Image
-              src="/images/research.svg"
-              alt="research"
-              width={500}
-              height={430}
-            />
-          </div>
-
-          <div className={styles.mobileImg}>
             <Image
               src="/images/research.svg"
               alt="research"
@@ -53,6 +52,14 @@ const HowItWorks = () => {
         </div>
 
         <div className={styles.column}>
+          <div className={styles.mobileImg}>
+            <Image
+              src="/images/prototype.svg"
+              alt="prototype"
+              width={335}
+              height={351}
+            />
+          </div>
           <div className={styles.rightCol}>
             <div className={styles.steps}>| Step 2</div>
             <div className={styles.title}>Prototyping</div>
@@ -63,18 +70,18 @@ const HowItWorks = () => {
             </div>
           </div>
         </div>
-        <div className={styles.mobileImg}>
-          <Image
-            src="/images/prototype.svg"
-            alt="prototype"
-            width={520}
-            height={417}
-          />
-        </div>
       </div>
 
       <div className={styles.container}>
         <div className={styles.column}>
+          <div className={styles.mobileImg}>
+            <Image
+              src="/images/presentation.svg"
+              alt="presentation"
+              width={335}
+              height={273}
+            />
+          </div>
           <div className={styles.leftCol}>
             <div className={styles.steps}>| Step 3</div>
             <div className={styles.title}>Presentation</div>
@@ -93,15 +100,6 @@ const HowItWorks = () => {
 
         <div className={styles.column}>
           <div className={styles.flexCenter} data-scroll data-scroll-speed="2">
-            <Image
-              src="/images/presentation.svg"
-              alt="presentation"
-              width={500}
-              height={500}
-            />
-          </div>
-
-          <div className={styles.mobileImg}>
             <Image
               src="/images/presentation.svg"
               alt="presentation"
