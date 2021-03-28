@@ -35,7 +35,7 @@ export default function eventDetails() {
           <HowItWorks />
           {/* <Schedule /> */}
           <Faq />
-          <Speaker />
+          {/* <Speaker /> */}
           <Footer />
         </div>
       </SmoothScrollProvider>
