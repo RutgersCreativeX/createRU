@@ -126,12 +126,12 @@ const Faq = () => {
               <div>
                 Register by 11:59 on Friday, April 9th at
                 <a
-                  href="https://createru.com/"
+                  href="https://forms.gle/LpggPoBtTTpgUhsq8"
                   target="_blank"
                   className={styles.link}
                 >
                   {" "}
-                  createru.com
+                  here
                 </a>
                 !
               </div>

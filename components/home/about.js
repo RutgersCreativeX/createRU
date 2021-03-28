@@ -132,7 +132,7 @@ const About = () => {
             <div className={styles.button}>
               <a
                 className={`blueButton`}
-                href="https://forms.gle/LpggPoBtTTpgUhsq8 "
+                href="https://forms.gle/LpggPoBtTTpgUhsq8"
                 target="_blank"
                 rel="noopener noreferrer"
               >
