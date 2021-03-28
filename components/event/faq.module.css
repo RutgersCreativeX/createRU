@@ -7,9 +7,10 @@
 .container {
   max-width: 1400px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 0px 104px 24px;
   /* background-color: red; */
+  width: 100%;
 }
 
 .title {
@@ -21,7 +22,7 @@
 
   align-self: center;
 
-  margin: 80px 50px 60px;
+  margin: 50px 50px 60px;
 }
 
 .left {
@@ -32,11 +33,11 @@
 
 .leftInner {
   /* background-color: red; */
-  margin-right: 32px;
+  margin-right: 48px;
 }
 .rightInner {
   /* background-color: red; */
-  margin-left: 32px;
+  margin-left: 48px;
 }
 
 .right {

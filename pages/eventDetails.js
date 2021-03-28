@@ -33,7 +33,7 @@ export default function eventDetails() {
           <EventAbout />
           <Theme />
           <HowItWorks />
-          <Schedule />
+          {/* <Schedule /> */}
           <Faq />
           <Speaker />
           <Footer />
